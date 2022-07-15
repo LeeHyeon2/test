@@ -20,9 +20,15 @@ public class TestController {
     @PostMapping("/board/save")
     public String save(@ModelAttribute BoardDTO boardDTO){
         Long id = testService.save(boardDTO);
+        Long id1 = testService.save(boardDTO);
         return "/test";
     }
 
+    public Long asd(){
+        Long a = 1L;
+        a = 2L;
+        return a;
+    }
 
 
     @GetMapping("/board")
