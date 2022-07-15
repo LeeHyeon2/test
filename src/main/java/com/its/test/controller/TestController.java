@@ -27,6 +27,7 @@ public class TestController {
     public Long asd(){
         Long a = 1L;
         a = 2L;
+        a = 3L;
         return a;
     }
 
