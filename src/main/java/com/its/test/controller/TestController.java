@@ -20,18 +20,17 @@ public class TestController {
     @PostMapping("/board/save")
     public String save(@ModelAttribute BoardDTO boardDTO){
         Long id = testService.save(boardDTO);
-        return "/testtesttesttesttesttest";
+        return "/testtesttesttesttest test test";
     }
 
 
-    //
-    //
-    //test test
+
     @GetMapping("/board")
     public String findAll(Model model){
         List<BoardDTO> boardDTOS = testService.findAll();
         model.addAttribute("boardDTOS", boardDTOS);
-        return "/findAll";
+        //test test
+        return "/findAll/test";
     }
 
     @GetMapping("/board/{id}")
