@@ -16,7 +16,7 @@ import java.util.Optional;
 public class TestService {
     private final BoardRepository boardRepository;
     private final MemberRepository memberRepository;
-    private final BoardDTO boardDTO;
+
 
     public Long save(BoardDTO boardDTO) {
         return boardRepository.save(BoardEntity.toEntity(boardDTO)).getId();
