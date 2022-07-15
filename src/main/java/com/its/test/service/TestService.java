@@ -16,6 +16,7 @@ import java.util.Optional;
 public class TestService {
     private final BoardRepository boardRepository;
     private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
 
     public Long save(BoardDTO boardDTO) {
