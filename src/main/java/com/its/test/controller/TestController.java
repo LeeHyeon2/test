@@ -20,7 +20,7 @@ public class TestController {
     @PostMapping("/board/save")
     public String save(@ModelAttribute BoardDTO boardDTO){
         Long id = testService.save(boardDTO);
-        return "/testtesttesttesttest test test";
+        return "/test123";
     }
 
 
