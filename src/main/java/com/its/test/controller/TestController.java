@@ -23,6 +23,10 @@ public class TestController {
         return "/testtesttesttesttesttest";
     }
 
+
+    //
+    //
+    //test test
     @GetMapping("/board")
     public String findAll(Model model){
         List<BoardDTO> boardDTOS = testService.findAll();
